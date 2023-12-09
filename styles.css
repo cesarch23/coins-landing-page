@@ -1,126 +1,143 @@
 :root {
-    --orange: #F7931A;
-    --light-orange: #ffe9d5;
-    --secondary-blue: #1a9af7;
-    --light-blue: #e7f5ff;
-    --warn-black: #201e1c;
-    --black: #282623;
-    --grey: #bababa;
-    --off-white: #faf8f7;
-    --white: #fff;
+  --orange: #F7931A;
+  --light-orange: #ffe9d5;
+  --secondary-blue: #1a9af7;
+  --light-blue: #e7f5ff;
+  --warn-black: #201e1c;
+  --black: #282623;
+  --grey: #bababa;
+  --off-white: #faf8f7;
+  --white: #fff;
 
 }
 
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 html {
-    font-size: 62.5%;
-    font-family: 'Roboto', sans-serif;
+  font-size: 62.5%;
+  font-family: 'Roboto', sans-serif;
+   scroll-behavior: smooth;
 }
-.header{
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    min-width: 32rem;
-    height: 33.4rem;
-    background: linear-gradient(207.8deg, #201e1c 16.69%, #F7931A 100%);
+
+.container{
+  max-width: 120rem;
+  margin: 0 auto;
 }
-.header img{
-    width: 15rem;
-    height: 2.4rem;
-    margin-top: 6rem;
- 
+.header {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-width: 32rem;
+  height: 33.4rem;
+  background: linear-gradient(207.8deg, #201e1c 16.69%, #F7931A 100%);
 }
-.header__title-container{
-    
-    width: 90%;
-    min-width: 28.8rem;
-    max-width: 90rem;
-    height: 21.8rem;
-    margin-top: 4rem;
-    text-align: center;  
-}
-.header__title-container h1{
-    color: var(--white);
-    font-size: 2.4rem;
-    font-weight: bold;
-    line-height: 2.6rem;
+
+.header img {
+  width: 15rem;
+  height: 2.4rem;
+  margin-top: 6rem;
 
 }
-.header__title-container p{
-    margin-top: 2.5rem;
-    font-size: 1.4rem;
-    font-weight: 500;
-    line-height: 1.8rem;
-    color: var(--light-orange);
+
+.header__title-container {
+
+  width: 90%;
+  min-width: 28.8rem;
+  max-width: 90rem;
+  height: 21.8rem;
+  margin-top: 4rem;
+  text-align: center;
 }
-.header__title-container .header__button{
-    position: absolute;
-    margin-top:3.4rem;
-    top: 27.6rem;
-    left: calc(50% - 114.5px);
-     font-size: 1.6rem;
-    display: block;
-    padding: 1.5rem;
-    width: 22.9rem;
-    height: 4.8rem;
-    background-color: var(--off-white);
-    box-shadow: 0rem .4rem .8rem rgba(89, 73, 30, .16);
-    border: none;
-    border-radius: .5rem;
-    text-decoration: none; 
-    font-weight: 700;
-    color: var(--black);
+
+.header__title-container h1 {
+  color: var(--white);
+  font-size: 2.4rem;
+  font-weight: bold;
+  line-height: 2.6rem;
 
 }
-main{
-    width: 100%;
-    height: auto;
-    background-color: var(--off-white);
+
+.header__title-container p {
+  margin-top: 2.5rem;
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.8rem;
+  color: var(--light-orange);
+  
 }
-.exchange__container{
-    width: 100% ;
-    padding: 8rem 0rem 3rem 0rem ;
-    
+
+.header__title-container .header__button {
+  position: absolute;
+  margin-top: 3.4rem;
+  top: 27.6rem;
+  left: calc(50% - 114.5px);
+  font-size: 1.6rem;
+  display: block;
+  padding: 1.5rem;
+  width: 22.9rem;
+  height: 4.8rem;
+  background-color: var(--off-white);
+  box-shadow: 0rem .4rem .8rem rgba(89, 73, 30, .16);
+  border: none;
+  border-radius: .5rem;
+  text-decoration: none;
+  font-weight: 700;
+  color: var(--black);
+
 }
-.exchange__container .exchange__backImg{
-    width: 20rem;
-    height: 20rem;
-    margin: 0 auto;
-    margin-bottom: 5rem;
-    background-image: url('./assets/img/Bitcoin.svg') ;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+
+main {
+  width: 100%;
+  height: auto;
+  background-color: var(--off-white);
 }
-.exchange__container--title
-{
-    width: 90%;
-    min-width: 28.8rem;
-    max-width: 90rem;
-    margin: 0 auto;
-    text-align: center;
+
+.exchange__container {
+  width: 100%;
+  padding: 8rem 0rem 3rem 0rem;
+
 }
-.exchange__container--title h2{
-    margin-bottom: 3rem;
-    font-size: 2.4rem;
-    font-weight: bold;
-    line-height: 1.6rem;
-    color: var(--black);
+
+.exchange__container .exchange__backImg {
+  width: 20rem;
+  height: 20rem;
+  margin: 0 auto;
+  margin-bottom: 5rem;
+  background-image: url('./assets/img/Bitcoin.svg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
-.exchange__container--title p{
-    color: rgb(108, 108, 108);
-    font-size: 1.4rem;
-    font-weight: 500;
-    line-height: 1.6rem;
-    margin-bottom: 3rem;
+
+.exchange__container--title {
+  width: 90%;
+  min-width: 28.8rem;
+  max-width: 90rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.exchange__container--title h2 {
+  margin-bottom: 3rem;
+  font-size: 2.4rem;
+  font-weight: bold;
+  line-height: 1.6rem;
+  color: var(--black);
+}
+
+.exchange__container--title p {
+  color: rgb(108, 108, 108);
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.6rem;
+  margin-bottom: 3rem;
 }
 
 
@@ -135,6 +152,7 @@ main{
 
   font-family: "Inter", sans-serif;
 }
+
 .main-currency-table .currency-table--title {
   margin-bottom: 15px;
   font-size: 1.8rem;
@@ -142,6 +160,7 @@ main{
   line-height: 2.3rem;
   color: var(--bitcoin-orange);
 }
+
 .main-commissions-table .commissions-table--title {
   margin-bottom: 15px;
   font-size: 1.8rem;
@@ -149,6 +168,7 @@ main{
   line-height: 2.3rem;
   color: var(--secondary-blue);
 }
+
 .currency-table--container,
 .commissions-table--container {
   width: 90%;
@@ -159,11 +179,13 @@ main{
   /* background-color: #fff; */
   border-radius: 15px;
 }
+
 .currency-table--container table,
 .commissions-table--container table {
   width: 100%;
   height: 100%;
 }
+
 .currency-table--container td,
 .commissions-table--container td {
   width: 50%;
@@ -174,22 +196,27 @@ main{
   /* border-bottom: 1px solid #faf8f7; */
   background-color: var(--just-white);
 }
+
 .currency-table--container .table__top-left,
 .commissions-table--container .table__top-left {
   border-radius: 15px 0 0 0;
 }
+
 .currency-table--container .table__top-right,
 .commissions-table--container .table__top-right {
   border-radius: 0 15px 0 0;
 }
+
 .currency-table--container .table__bottom-left,
 .commissions-table--container .table__bottom-left {
   border-radius: 0 0 0 15px;
 }
+
 .currency-table--container .table__bottom-right,
 .commissions-table--container .table__bottom-right {
   border-radius: 0 0 15px 0;
 }
+
 .currency-table--container .table__right,
 .commissions-table--container .table__right {
   font-size: 1.4rem;
@@ -197,6 +224,7 @@ main{
   line-height: 1.7rem;
   color: #757575;
 }
+
 .currency-table--container .up {
   display: inline-block;
   width: 15px;
@@ -207,6 +235,7 @@ main{
   background-position: center;
   background-repeat: no-repeat;
 }
+
 .currency-table--container .down {
   display: inline-block;
   width: 15px;
@@ -217,6 +246,7 @@ main{
   background-position: center;
   background-repeat: no-repeat;
 }
+
 .currency-table--date {
   width: 190px;
   height: 31px;
@@ -226,6 +256,7 @@ main{
   background-color: var(--soft-orange);
   border-radius: 8px;
 }
+
 .commissions-table--date {
   width: 190px;
   height: 31px;
@@ -235,46 +266,54 @@ main{
   background-color: var(--soft-blue);
   border-radius: 8px;
 }
+
 .currency-table--date p,
 .commissions-table--date p {
   margin: 7px;
   font-size: 1.2rem;
   line-height: 1.5px;
 }
-/* caracteriticas del proyecto */
 
+/* caracteriticas del proyecto */
 .feature{
   background-color: var(--warn-black);
+}
+.feature__container {
+  
   position: relative;
   width: 100%;
   min-width: 32rem;
   padding: 2rem 1rem;
 
 }
-.feature__logo{
 
-}
-.feature__title{
+.feature__logo {}
+
+.feature__title {
   text-align: center;
 }
-.feature__title h2{
+
+.feature__title h2 {
   color: var(--white);
   font-size: 2.4rem;
   font-weight: 700;
   margin-bottom: 2rem;
 }
-.feature__title p{
+
+.feature__title p {
   color: var(--grey);
   font-size: 1.4rem;
   margin-bottom: 2rem;
 }
-.feature__list{
+
+.feature__list {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
   align-items: center;
 }
-.feature__list-item{
+
+.feature__list-item {
   width: 90%;
   min-width: 28.8rem;
   max-width: 40rem;
@@ -284,20 +323,43 @@ main{
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.16);
   border-radius: .4rem;
 }
-.feature__list-item h3{
+
+.feature__list-item h3 {
   color: var(--white);
   font-size: 1.8rem;
   margin-bottom: 1.5rem;
-  
+
 }
-.feature__list-item p{
-   color: var(--grey);
-   font-size: 1.4rem;
-   line-height: 1.8rem;
-   font-weight: 500;
+
+.feature__list-item p {
+  color: var(--grey);
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  font-weight: 500;
 }
+
+@media (min-width:500px) {
+  .feature__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 9rem;
+    row-gap: 4rem;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .feature__list-item {
+     
+    max-width: 40rem;
+    height: 15.2rem;
+    
+  }
+
+}
+
 /* bitcoin-img */
-.bitcoin-img{
+.bitcoin-img {
   min-width: 32rem;
   height: 40rem;
   background-image: url("./assets/img/bitcoinbaby2x.jpg");
@@ -305,7 +367,8 @@ main{
   background-position: center;
   background-size: cover;
 }
-.bitcoin-img h2{
+
+.bitcoin-img h2 {
   text-align: center;
   font-size: 2.8rem;
   font-weight: 700;
@@ -313,3 +376,145 @@ main{
   padding-top: 35.4rem;
   /* margin-top: 1rem; */
 }
+
+/* plans */
+.plan{
+  width: 100%;
+  min-width: 32.2rem;
+}
+.plan__title{
+  font-size: 2.4rem;
+  padding:5rem 0rem 2rem 0rem;
+  color: var(--warn-black);
+  font-weight: 700;
+  text-align: center;
+
+}
+.plan__caption{
+  color: var(--grey);
+  font-size: 1.4rem;
+  font-weight: 500;
+
+  text-align: center;
+ 
+}
+.plan__list{
+  display: flex;
+ 
+  justify-content: space-between;
+  align-items: center;
+  gap: 4.5rem;
+  overflow-x:auto ;
+  margin: 3rem; 
+  padding: 5rem 1rem; 
+  /* overscroll-behavior-x: contain;
+  scroll-snap-type: x proximity; */
+}
+.gradient{
+  /* background-image: linear-gradient(to right, blue, red);
+  padding: .5rem;
+  border-radius: .8rem; */
+}
+.plan__item{
+ 
+  background-color: white;
+  position: relative;
+  min-width: 23rem;
+  /* max-width: 25rem; */
+  height: 25rem;
+  padding: 2.5rem 2rem;
+  /* border-radius: calc(.8rem - .2rem); */
+  border-radius: .8rem;
+  text-align: center;
+  z-index: 1;
+ 
+}
+.plan__item::after{
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: .8rem;
+    padding: 2px;
+    background: linear-gradient(0deg, #F7931A, #282623);
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+ 
+}
+.plan__item-recomend{
+ 
+  width: 15rem;
+  height: 4rem;
+  position: absolute;
+  top: -2rem;
+  left: calc(50% - 7.5rem);
+  padding:1rem 2.5rem;
+  background-color: black;
+  color: var(--white);
+  border-radius: 8rem;
+  font-size: 1.6rem;
+  z-index: 100;
+ 
+  
+}
+.plan__item-title{
+  padding-top: .3rem;
+  font-size:1.4rem ;
+}
+.plan__item-price{
+    font-size:5.4rem;
+    line-height: 6.3rem;
+    font-weight: 900;
+    color: black;
+    padding: .5rem 0;
+}
+.plan__item-caption{
+  color: #757575;
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  font-weight: 500;
+
+}
+.plan__item-button{
+  background: rgba(255, 166, 0, 0.02);
+  
+  font-size: 1.4rem;
+  font-weight: bold;
+  border: .2rem solid var(--orange);
+  margin-top: 2rem;
+  padding:1.2rem 3rem;
+  border-radius: .4rem;
+}
+.plan__item-button a{
+  text-decoration: none;
+  color: black;
+}
+.plan__item-button a span{
+  display: inline-block;
+  background-image: url("./assets/icons/orange-right-arrow.svg");
+  width: 20px;
+  height: 20px;
+  vertical-align: text-bottom;
+
+}
+.footer{
+  background-color: var(--orange);
+}
+.footer__item{
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 5rem;
+}
+.footer__net{
+  list-style: none;
+  
+}
+.footer__net li{
+  color: var(--white);
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.8rem;
+}
+
+
+ 
