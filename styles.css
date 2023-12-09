@@ -152,7 +152,7 @@ main {
 .cards {
   margin: 5rem auto;
   display: flex;
-  overflow-x: hidden;
+  overflow-x: auto;
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
 }
@@ -199,7 +199,7 @@ main {
   z-index: 1;
   display: flex;
   column-gap: 1rem;
-  /* transform: translateX(-50%); */
+  transform: translateX(-50%);
 }
 
 .cards__card-slider-nav a {
@@ -223,7 +223,7 @@ main {
     justify-content: center;
     gap: 4rem;
     scroll-snap-type: none;
-  scroll-behavior: auto;
+    scroll-behavior: auto;
   }
 
     
