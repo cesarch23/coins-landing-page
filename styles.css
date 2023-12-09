@@ -149,14 +149,20 @@ main {
   max-width: 100%;
 }
 
+
 .cards {
   margin: 5rem auto;
   display: flex;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
+ 
+ 
 }
-
+ 
+.cards::-webkit-scrollbar{
+   width: 0;
+}
 .cards__card {
   
   padding: 1rem;
